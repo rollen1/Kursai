@@ -1,0 +1,21 @@
+.parent {
+    display: inline-block;
+    height: 100px;
+    margin: 36px;
+    border: 1px solid #333;
+    vertical-align: middle;
+    text-align: center;
+    background: grey;
+}
+
+span {
+    background: grey;
+}
+
+/* .child {
+    font-size: 14px;
+    padding: 12px;
+    background: red;
+    margin: 60px;
+    line-height: 20px;
+} */

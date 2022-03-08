@@ -1,0 +1,1 @@
+Sudeti tris kvadratus vienoje eileje
