@@ -1,0 +1,17 @@
+.cube {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background: violet;
+    position: relative;
+}
+
+.cube:after {
+    content: "";
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    background: red;
+    width: 20px;
+    height: 20px;
+}

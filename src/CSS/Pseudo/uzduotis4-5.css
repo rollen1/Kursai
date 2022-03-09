@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 4px 8px;
+    border: 1px solid #333;
+}
+
+/* tr:nth-of-type(2n, 4) {
+    background: blue;
+}
+
+tr:not(:nth-of-type(2n)) {
+    background: green;
+} */
+
+tr:nth-of-type(even) {
+    background: blue;
+}
+
+tr:nth-of-type(odd) {
+    background: red;
+}
+
+/* td:nth-of-type(even) {
+    background: yellow;
+} */
+
+/* td:nth-of-type(odd) {
+    background: green;
+} */
+
+tr:nth-of-type(even) td:nth-of-type(even) {
+    background: yellow
+}

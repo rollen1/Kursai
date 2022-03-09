@@ -1,0 +1,21 @@
+a:visited {
+    color: #1880c0;
+}
+
+input[type="text"] {
+    background: #fdb913
+}
+
+input[type="number"] {
+    background: #006a44
+}
+
+input[type="email"] {
+    background: #c1272d
+}
+
+button:hover {
+    transform: scale(1.5)
+}
+
+
