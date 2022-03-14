@@ -1,0 +1,44 @@
+header {
+    background: url("./assets/background.png");
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 50px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.express-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 26px;
+}
+
+.express-container img {
+    margin-right: 8px;
+}
+
+.express-container div {
+    color: #3d2514;
+    font-weight: 700;
+    font-family: "Montserrat", cursive;
+    font-size: 17px;
+}
+
+.right-side nav a {
+    text-decoration: none;
+    color: #3d2514;
+    text-align: right;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin: 0 26px;
+}
+
+.right-side nav a:first-child {
+    margin-left: 0;
+}
+
+.right-side nav a:last-child {
+    margin-right: 0;
+}
+  
