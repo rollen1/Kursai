@@ -1,0 +1,54 @@
+footer {
+    font-family: 'Bebas Neue', cursive;
+    background: url("./assets/footerBackground.png");
+    background-repeat: no-repeat;
+    max-width: 1326px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 76px 30px 22px;
+    color: #ffffff;
+}
+
+footer .left-side {
+    flex: 0 1 534px;
+    padding: 12px;
+}
+
+footer .left-side img {
+    margin-bottom: 47px;
+}
+
+footer .left-side p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 172px;
+}
+
+footer small {
+    font-size: 17px;
+}
+
+footer .right-side {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .right-side .contacts li {
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+footer .right-side .contacts img {
+    margin-right: 34px;
+}
+
+footer .right-side .social-media {
+    display: flex;
+    align-self: flex-end;
+}
+
+footer .right-side .social-media li {
+    margin-left: 12px;
+}

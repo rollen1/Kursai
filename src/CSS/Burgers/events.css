@@ -1,0 +1,66 @@
+.events {
+    max-width: 1440px;
+    margin: 64px auto;
+    box-shadow: 5px 2px 19px 3px rgba(0,0,0,0.41);
+}
+
+.events article {
+    display: flex;
+    padding: 26px;
+
+}
+
+.events .left-side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 26px;
+}
+
+.events h3, .events h2 {
+    text-transform: uppercase;
+    color: #3d2514;
+}
+
+.events h3 {
+    margin-top: 62px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 29px;
+}
+
+.events h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 42px;
+}
+
+.events p {
+    color: #3d3d3d;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-top: 14px;
+    text-align: left;
+}
+
+.events ul {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+}
+
+.events li {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background: #dcdcdc;
+}
+
+.events li:first-of-type {
+    background: #ffc045;
+}
+
+.events li:hover {
+    border: 1px solid #ffc045;
+    background: #ffc045;
+}

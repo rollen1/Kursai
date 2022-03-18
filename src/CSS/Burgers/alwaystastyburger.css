@@ -1,0 +1,37 @@
+.always-tasty-burger {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.always-tasty-burger button {
+    background: #ffc045;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    line-height: 1;
+    color: #3d2514;
+    width: 218px;
+    padding: 12px 20px 11px;
+}
+
+.always-tasty-burger h2 {
+    padding-top: 30px;
+    font-size: 50px;
+    color: #3d2514;
+    font-weight: 400;
+    font-family: 'Alfa Slab One', cursive;
+
+}
+
+.always-tasty-burger p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 17px;
+    font-family: "Montserrat", cursive;
+    color: #3d2514;
+    text-align: center;
+}

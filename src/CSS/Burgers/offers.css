@@ -2,22 +2,22 @@
     display: flex;
     justify-content: space-between;
     padding: 70px 108px;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .card.big {
     background: url(./assets/big-card.png);
     width: 596px;
     height: 420px;
-    position: relative;
+    /* position: relative;
     top: 0;
-    right: 35px;
-}
+    right: 35px; */
+} 
 
 .card {
     width: 596px;
     height: 192px;
-}
+} 
 
 .card.first {
     background: url(./assets/first-card.png);
