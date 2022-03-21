@@ -49,7 +49,6 @@
 .reservation .input-wrapper {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .reservation input {
