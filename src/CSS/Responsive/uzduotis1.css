@@ -1,0 +1,19 @@
+div {
+    width: 200px;
+    height: 200px;
+    margin: 12px;
+    background: red;
+}
+
+@media (min-width: 768px) {
+    div {
+        background: green;
+    }
+}
+
+@media (min-width: 1024px) {
+    div {
+        background: blue;
+    }
+}
+    

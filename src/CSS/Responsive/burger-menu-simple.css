@@ -1,0 +1,23 @@
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+button:focus nav {
+    display: flex;
+}
+
+button:focus-within nav {
+    display: flex;
+}
+
+@media (min-width: 375px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    svg {
+        display: none;
+    }
+}

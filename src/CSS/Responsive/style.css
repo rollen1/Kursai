@@ -1,0 +1,40 @@
+div {
+    width: 150px;
+    height: 150px;
+    margin: 12px;
+    background: red;
+}
+
+@media (min-width: 768px) {
+    div {
+        background: yellow;
+    }
+
+    div:nth-of-type(2) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div {
+        background: blue;
+    }
+
+    div:nth-of-type(2) {
+        display: block;
+    }
+}
+
+@media print {
+    div {
+        color: red;
+    }
+}
+
+@media (orientation: landscape) {
+    
+}
+
+@media (orientation: portrait) {
+    
+}

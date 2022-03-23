@@ -1,0 +1,97 @@
+body {
+    font-family: "Trebuchet MS", Gadget, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    color: #fb7e14;
+    text-decoration: none;
+    background: #151515;
+}
+
+span:hover {
+    text-shadow: 1px 2px 2px #FB7E14;
+    cursor: pointer;
+}
+
+[class ^="box-"] {
+    display: grid;
+    place-items: center;
+    border: 3px solid #404040;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    /* pays nusistatome eiles ir stulpelius */
+    /* grid-template-rows: auto 1fr auto;
+    grid-template-columns: repeat(4, 1fr); */
+    grid-template-areas:
+        "header header header header"
+        "box-2 box-2 box-2 box-2"
+        "box-3 box-3 box-3 box-3"
+        "box-4 box-4 box-4 box-4"
+        "box-5 box-5 box-5 box-5"
+        "footer footer footer footer";
+    grid-gap: 10px;
+}
+
+@media (min-width: 768px) {
+    body {
+        grid-template-areas:
+            "header header header header"
+            "box-2 box-3 box-3 box-3"
+            "box-2 box-4 box-4 box-4"
+            "box-2 box-5 box-5 box-5"
+            "footer footer footer footer";
+        grid-gap: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        grid-template-areas:
+            "header header header header"
+            "box-2 box-3 box-3 box-5"
+            "box-2 box-4 box-4 box-5"
+            "box-2 box-4 box-4 box-5"
+            "footer footer footer footer";
+        grid-gap: 10px;
+    }
+}
+
+
+
+/* @media (min-width: 1025px) {
+    body {
+
+    }
+} */
+
+.box-1 {
+    grid-area: header;
+}
+
+.box-2 {
+    grid-area: box-2;
+}
+
+.box-3 {
+    grid-area: box-3;
+}
+
+.box-4 {
+    grid-area: box-4;
+}
+
+.box-5 {
+    grid-area: box-5;
+}
+
+.box-6 {
+    grid-area: footer;
+}
+
+
+/* .box-1, .box-6 {
+    grid-column: 1 / 5;
+} */

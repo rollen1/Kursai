@@ -1,0 +1,92 @@
+body {
+    font-family: Helvetica, sans-serif;
+    position: relative;
+}
+
+header {
+    box-shadow: 0 0 3px 0 #333;
+    padding: 24px;
+    width: 100%;
+    /* Nusirodau nes noriu pozicionuoti savo linkus pagal si elementa */
+}
+
+button {
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+nav {
+    /* Mobile-first visa navigacija nerodoma kol nepaspaustas mygtukas */
+    visibility: hidden;
+    /* Check menu */
+    position: absolute;
+    background: #fff;
+    top: 93px;
+    left: 0;
+}
+
+button:focus nav {
+    /* Paspausto mygtuko stilius */
+    visibility: visible;
+}
+
+button:focus-within nav {
+    visibility: visible;
+}
+
+ul {
+    /* Ant mazo ekrano nepakanka plocio, del to linkus rodome stulpeliu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 3px 0 #333;
+    width: 100vw;
+    padding: 0 6px;
+}
+
+li {
+    width: 100%;
+    padding: 12px 6px;
+    border-bottom: 1px solid #333;
+}
+
+li:last-of-type {
+    border-bottom: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@media (min-width: 768px) {
+    /* Linkai telpa eilute, nera tikslo rodyti mygtuko kuris atidarytu juos naujam menu */
+    svg {
+        display: none;
+    }
+
+    nav {
+       position: relative;
+       top: initial;
+       left: initial;
+       visibility: visible;
+    }
+    
+
+    /* Grazinam atvaizdavima eilute, kadangi elementai vel telpa */
+    ul {
+        flex-direction: row;
+        width:auto;
+        box-shadow: none;
+    }
+
+    li {
+        border-bottom: none;
+    }
+}
