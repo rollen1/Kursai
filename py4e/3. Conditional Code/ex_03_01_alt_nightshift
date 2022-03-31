@@ -1,0 +1,6 @@
+hours = float(input("Enter hours: "))
+rate = float(input("Enter pay: "))
+pay = hours * rate
+nightshift = rate * 0.5
+pay = pay + nightshift
+print("Pay: ", pay)
