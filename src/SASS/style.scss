@@ -1,0 +1,39 @@
+// CSS kintamuoju budu nenaudojant SASS
+// :root {
+// --pavadinimas: blue;
+// }
+
+$pavadinimas: blue;
+$dimensions: 100px 100px;
+
+@mixin cube($dimensions: 100px, $background-color: $pavadinimas) {
+    width: $dimensions;
+    height: $dimensions;
+    background: $color;
+}
+
+
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    @include cube;
+    @include flexCenter();
+    // CSS kintamuoju budu nenauojant SASS
+    // background: var(--pavadinimas);
+    // SASS kintamojo variantas
+    // background: $pavadinimas;
+
+    div {
+        @include cube (75px, red);
+
+        div {
+            @include cube (50px, yellow);
+
+        }
+    }
+}

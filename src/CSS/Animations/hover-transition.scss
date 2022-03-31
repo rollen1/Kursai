@@ -1,0 +1,20 @@
+.transition {
+    position: relative;
+
+    menu {
+        position: absolute;
+        left: -100%;
+        transition: left 500ms linear;
+        padding-left: 8px;
+    }
+
+    &:hover {
+        button {
+            opacity: 1;
+        }
+
+        menu {
+            left: 0;
+        }
+    }
+}
