@@ -1,4 +1,10 @@
-@import 'theme';
+@use 'theme';
+
+@mixin flex-align($x: center, $y: center) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}
 
 .container {
     max-width: 1180px;
@@ -6,13 +12,7 @@
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 13px;
     font-weight: 600;
-    color: $text-color;
-}
-
-@mixin flex-layout($horizontal: center, $vertical: center) {
-    display: flex;
-    justify-content: $horizontal;
-    align-items: $vertical;
+    color: #1f373d;
 }
