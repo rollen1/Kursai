@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
-@use 'theme';
-@use 'utility';
+@import 'theme';
+@import 'utility';
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #1f373d;
+    color: $text-color;
 }
 
-// <header>
+// __________________________________________<header>_________________________________________________
 
 .header {
     @include flex-align(space-between, center);
     padding: 26px 18px;
-    background: #fff;
+    background: $white;
+    text-decoration: none;
 }
 
 .header__nav {
@@ -25,14 +26,14 @@ body {
     order: 1;
     z-index: 2;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $pc) {
         .header__nav-links {
-            background: #fff;
+            background: $white;
             display: none;
             position: absolute;
             top: 40px;
             right: 0;
-            border: 1px solid #1f373d;
+            border: 1px solid $border-color;
             border-radius: 5px;
         }
 
@@ -56,16 +57,16 @@ body {
 .header__nav-link {
     width: 100%;
     padding: 15px 16px 14px;
-    font-size: 13px;
+    font-size: $text-size;
     font-weight: 600;
     text-align: center;
 
     &:hover {
-        border-bottom: 1px solid #1f373d;
+        border-bottom: 1px solid $border-color;
     }
 }
 
-.header__corner-wrapper {
+.header__right-corner-wrapper {
     display: none;
     margin-left: 100px;
 
@@ -74,20 +75,26 @@ body {
     }
 }
 
-.header__corner-button {
-    background: #ffcc01;
-    border-radius: 3px;
+.header__right-corner-button {
+    background: $yellow;
+    border-radius: $border-radius;
     padding: 15px 22px 14px;
     white-space: nowrap;
     font-weight: 600;
+    transition: background-color 300ms ease-in-out;
 
-@media (min-width: 768px) {
-    .header__corner-wrapper {
+    &:hover {
+        background-color: $main-grey;
+    }
+}
+
+@media (min-width: $tablet) {
+    .header__right-corner-wrapper {
         @include flex-align(space-between, center)
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $pc) {
     .header__nav-menu {
         order: 0;
     }
@@ -96,4 +103,5 @@ body {
         display: none;
     }
 }
-}
+
+// __________________________________________</header>_________________________________________________

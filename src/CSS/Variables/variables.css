@@ -1,36 +1,7 @@
 :root {
-    --primary: #0091dc;
+    --primary: red;
     --secondary: red;
     --padding-sm: 12px 16px;
-    --margin-xs: 50px 50px;
-    --font-big: "roboto", san-serif;
-    --brand-shadow: 0 0 5px 5px #000;
-}
-
-body {
-    background: var(--primary);
-}
-
-
-.cube {
-    width: 50px;
-    height: 50px;
-    margin: var(--margin-xs);
-    padding: var(--padding-sm);
-    background: var(--secondary);
-    box-shadow: var(--brand-shadow);
-}
-
-.paragraph {
-    font-size: 12px;
-    line-height: 14px;
-    color: #fff;
-    margin: 12px;
-    padding: 12px;
-}
-
-.f-c-c {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    --margin-xs: 12px;
+    --brand-shadow: 0 0 3px 4px #000;
 }

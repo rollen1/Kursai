@@ -9,7 +9,7 @@ $dimensions: 100px 100px;
 @mixin cube($dimensions: 100px, $background-color: $pavadinimas) {
     width: $dimensions;
     height: $dimensions;
-    background: $color;
+    background-color: $color;
 }
 
 

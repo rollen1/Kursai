@@ -1,0 +1,38 @@
+.cube {
+    width: 50px;
+    height: 50px;
+    margin: var(--margin-xs);
+    box-shadow: var(--brand-shadow);
+    background: var(--primary);
+}
+
+.paragraph {
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    margin: 12px;
+    padding: 12px;
+}
+
+.f-c-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-s-c {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.su-margin {
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 24px;
+}
+
+.margin-0 {
+    margin: 0;
+}

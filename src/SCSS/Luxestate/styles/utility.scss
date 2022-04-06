@@ -1,4 +1,8 @@
-@use 'theme';
+@import 'theme';
+
+html {
+    scroll-behavior: smooth;
+}
 
 @mixin flex-align($x: center, $y: center) {
     display: flex;
@@ -12,7 +16,7 @@
 }
 
 .logo {
-    font-size: 13px;
+    font-size: 25px;
     font-weight: 600;
-    color: #1f373d;
+    color: $text-color;
 }
