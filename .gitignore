@@ -1,8 +1,8 @@
-**/SASS/*.css
-**/SASS/*.map
-**/Animations/*.css
-**/Animations/*.map
-**/Luxestate/*.css
-**/Luxestate/*.map
+**/SCSS/*.css
+**/SCSS/*.map
+**/src/SCSS/Animations/*.css
+**/src/SCSS/Animations/*.map
+**/src/SCSS/Luxestate/*.css
+**/src/SCC/Luxestate/*.map
 *.psd
 *.zip

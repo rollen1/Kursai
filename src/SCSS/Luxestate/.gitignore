@@ -1,4 +1,6 @@
+*.css
+*.map
 *.psd
 *.zip
-*.map
-*.css
+/node_modules
+package-lock.json
