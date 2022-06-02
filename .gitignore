@@ -6,3 +6,7 @@
 **/src/SCC/Luxestate/*.map
 *.psd
 *.zip
+*.rar
+/node_modules
+/.vscode
+.DS_Store

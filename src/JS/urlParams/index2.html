@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+
+    <input>
+
+    <button onclick="go()">Go</button>
+</body>
+
+<script>
+    // Susikuriam url object
+    const url = new URL(window.location.href);
+    const input = document.querySelector('input')
+    const div = document.querySelector('div')
+    let username;
+    let welcomeMessage;
+
+
+
+    // Issitraukiam konkretu search parameter
+    username = url.searchParams.get('username')
+    welcomeMessage = url.searchParams.get('welcomeMessage')
+
+    if (username && welcomeMessage) div.textContent = `${welcomeMessage} ${username}`
+
+    function go() {
+        // Nutrinam visus search parametrus ir uztaton nauja
+        url.searchParams.set('username', input.value)
+        url.searchParams.set('welcomeMessage', 'Welcome to our page')
+        window.location.assign(url)
+    }
+
+    // ENCODING/DECODING
+    let decodedMessage = decodeURIComponent(window.location.search);
+    let encodedMessage = encodeURIComponent(decodedMessage)
+
+    console.log('Standard', window.location.search);
+    console.log('Decoded', decodedMessage);
+    console.log('Encoded', encodedMessage);
+    console.log('Encoded 2x', encodeURIComponent(encodedMessage));
+</script>
+
+</html>
