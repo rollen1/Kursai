@@ -1,5 +1,3 @@
 ## BIT Front-End
 
-HTML
-CSS
-JS
+HTML // CSS // JS
